@@ -1,8 +1,5 @@
-/**
- * Created by iyasuwatts on 10/17/17.
- */
+import java.util.*;
 public class Main {
-
     public static void main(String[] args){
         
         int number = getInputNumber();
@@ -11,6 +8,17 @@ public class Main {
         
         System.out.println(sum);
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a whole number: ");
+
+        int input = scan.nextInt();
+        int sum = 0;
+
+        for(int i = 0; i <= input; i++) {
+            sum += i;
+        }
+
+        System.out.println(sum);
     }
     
     // do this one and the lab is complete. really.
