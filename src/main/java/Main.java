@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Created by iyasuwatts on 10/17/17.
  */
@@ -11,6 +13,17 @@ public class Main {
         
         System.out.println(sum);
 
+        Scanner number = new Scanner(System.in);
+        System.out.println("Please enter a number");
+        String input = number.nextLine();
+        int giveNumber = Integer.parseInt(input);
+
+int sum = 0;
+
+        for(int i = 0; i <= giveNumber; i++) {
+            sum += i;
+        }
+        System.out.println(sum);
     }
     
     // do this one and the lab is complete. really.
@@ -43,3 +56,11 @@ public class Main {
     // google "how to time some java code"
     // use "System.currentTimeMillis()" to ask the system what time it is.
 }
+
+
+
+
+
+
+
+
