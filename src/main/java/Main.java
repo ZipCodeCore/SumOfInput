@@ -1,3 +1,7 @@
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
+import java.util.Scanner;
+
 /**
  * Created by iyasuwatts on 10/17/17.
  * Modified by kristofer in Jan 2024
@@ -11,6 +15,12 @@ public class Main {
         int sum = sumOfNumbers(number);
         
         System.out.println(sum);
+
+        Scanner firstNumber = new Scanner(System.in);
+        System.out.println("Enter Number:");
+        int n = Integer.parseInt(firstNumber.nextLine());
+        System.out.println(n+1);
+
 
     }
     
