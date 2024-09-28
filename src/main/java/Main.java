@@ -2,6 +2,9 @@
  * Created by iyasuwatts on 10/17/17.
  * Modified by kristofer in Jan 2024
  */
+
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args){
@@ -11,6 +14,20 @@ public class Main {
         int sum = sumOfNumbers(number);
         
         System.out.println(sum);
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+
+        int userNumber = scan.nextInt();
+
+        int total = 0;
+
+        for (int i = 0; i <= userNumber; i++) {
+            total += i;
+        }
+
+        System.out.println("Your total is: " + total);
 
     }
     
