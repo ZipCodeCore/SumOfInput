@@ -1,5 +1,7 @@
 # SumOfInput
 
+`fork` this repository and `clone` it to your local machine.
+
 # Sum the Numbers
 
 ## **Objective:**
