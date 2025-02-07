@@ -6,7 +6,7 @@
 
 * Write a program which prompts the user to input a number, `n`.
 * The program should respond by printing the sum of the numbers 1 to `n`.
-* **Constraint:** No [Guassian wizardry](http://mathandmultimedia.com/2010/09/15/sum-first-n-positive-integers/) !
+* **Constraint:** No [Guassian wizardry](https://letstalkscience.ca/educational-resources/backgrounders/gauss-summation) !
 
 ### Extra Credit (no, not really)
 
@@ -21,6 +21,43 @@ _If you find this lab to be super simple, then implment these two requirements._
     * User input
     * Object instantation/declaration
     * Method invokation
+
+### Instructions
+
+First, `cd src/main/java` to get to the correct directory.
+Use `nano` to create a new Java file named `SumOfInput.java`.
+
+1. Create a new Java class named `SumOfInput`. (You can use the `javac` and `java` commands to compile and run your program.)
+2. Inside the `main` method of the `SumOfInput` class, create a new `Scanner` object to read user input.
+3. Prompt the user to enter a number, `n`, and read the input using the `Scanner` object.
+4. Create a new `sumNumbers()` method (hey, go find the one in JavaSmall) and pass the user input to the method.
+5. Inside the `sumNumbers()` method, use a loop to calculate the sum of the numbers from 1 to `n`. (If you didn't type it in from JavaSmall)
+6. Print the sum of the numbers to the console.
+
+Now, how do we run this java program?
+
+```bash
+javac SumOfInput.java
+java SumOfInput
+```
+
+Did it give you the right answer? If not, go back and fix it.
+(How do you know if it's right? Well, you can do the math yourself, or you can use the Gaussian Wizardry.)
+We do know that the sum of the numbers from 1 to 3 is 6. So, if you input 3, you should get 6.
+Now, pick some bigger numbers and see if you get the right answer. What happens if you put in 199872?
+(Let's put a pin in that for now. I mean, of course, how did that sum end up being a negative number?)
+
+Oakay, now, if you're feeling froggy, go ahead and do the Extra Credit.
+But before you do that save all this work to your GitHub repository.
+
+```bash
+git add .
+git commit -m "Add SumOfInput work"
+git push
+```
+
+NOW do the Extra Credit.
+
 
 ### **Resources:**
 
@@ -71,4 +108,3 @@ No Unit Tests (well, not yet).
 ## What's a millisecond?
 
 A millisecond is a unit of time that is equal to one thousandth of a second. It is commonly used in computer programming to measure the duration of operations or to time events. For example, a program might measure the time it takes to perform a calculation in milliseconds, or it might use a delay of a certain number of milliseconds to control the timing of events. In general, a millisecond is a very short amount of time, but it can be significant in certain contexts, such as real-time systems or high-performance computing.
-
